@@ -11,6 +11,8 @@
 		496BDEB5289A21B800ED11B1 /* DataStructureSwift.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 496BDEAA289A21B800ED11B1 /* DataStructureSwift.framework */; };
 		496BDEBA289A21B800ED11B1 /* DataStructureSwiftTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 496BDEB9289A21B800ED11B1 /* DataStructureSwiftTests.swift */; };
 		496BDEBB289A21B800ED11B1 /* DataStructureSwift.h in Headers */ = {isa = PBXBuildFile; fileRef = 496BDEAD289A21B800ED11B1 /* DataStructureSwift.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		496BDECF289A559500ED11B1 /* BST.swift in Sources */ = {isa = PBXBuildFile; fileRef = 496BDECE289A559500ED11B1 /* BST.swift */; };
+		496BDED2289A60C700ED11B1 /* BSTTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 496BDED1289A60C700ED11B1 /* BSTTests.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -29,6 +31,8 @@
 		496BDEAE289A21B800ED11B1 /* DataStructureSwift.docc */ = {isa = PBXFileReference; lastKnownFileType = folder.documentationcatalog; path = DataStructureSwift.docc; sourceTree = "<group>"; };
 		496BDEB4289A21B800ED11B1 /* DataStructureSwiftTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = DataStructureSwiftTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		496BDEB9289A21B800ED11B1 /* DataStructureSwiftTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataStructureSwiftTests.swift; sourceTree = "<group>"; };
+		496BDECE289A559500ED11B1 /* BST.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BST.swift; sourceTree = "<group>"; };
+		496BDED1289A60C700ED11B1 /* BSTTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BSTTests.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -71,6 +75,7 @@
 		496BDEAC289A21B800ED11B1 /* DataStructureSwift */ = {
 			isa = PBXGroup;
 			children = (
+				496BDECB289A4F6F00ED11B1 /* Tree */,
 				496BDEAD289A21B800ED11B1 /* DataStructureSwift.h */,
 				496BDEAE289A21B800ED11B1 /* DataStructureSwift.docc */,
 			);
@@ -80,9 +85,26 @@
 		496BDEB8289A21B800ED11B1 /* DataStructureSwiftTests */ = {
 			isa = PBXGroup;
 			children = (
+				496BDED0289A60BB00ED11B1 /* Tree */,
 				496BDEB9289A21B800ED11B1 /* DataStructureSwiftTests.swift */,
 			);
 			path = DataStructureSwiftTests;
+			sourceTree = "<group>";
+		};
+		496BDECB289A4F6F00ED11B1 /* Tree */ = {
+			isa = PBXGroup;
+			children = (
+				496BDECE289A559500ED11B1 /* BST.swift */,
+			);
+			path = Tree;
+			sourceTree = "<group>";
+		};
+		496BDED0289A60BB00ED11B1 /* Tree */ = {
+			isa = PBXGroup;
+			children = (
+				496BDED1289A60C700ED11B1 /* BSTTests.swift */,
+			);
+			path = Tree;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -194,6 +216,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				496BDECF289A559500ED11B1 /* BST.swift in Sources */,
 				496BDEAF289A21B800ED11B1 /* DataStructureSwift.docc in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -203,6 +226,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				496BDEBA289A21B800ED11B1 /* DataStructureSwiftTests.swift in Sources */,
+				496BDED2289A60C700ED11B1 /* BSTTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -395,6 +419,7 @@
 		496BDEC2289A21B800ED11B1 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = MYB5299FCX;
@@ -410,6 +435,7 @@
 		496BDEC3289A21B800ED11B1 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = MYB5299FCX;
